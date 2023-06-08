@@ -93,75 +93,7 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/test_bigquery_main_project_1:
     name: test_bigquery_main_project_1
-    schema:
-      providerType: BigQuery
-      fields:
-      - name: c_int64
-        dataType:
-          type: Integer
-      - name: c_bignumeric
-        dataType:
-          type: BigNumeric
-      - name: c_bool
-        dataType:
-          type: Boolean
-      - name: c_bytes
-        dataType:
-          type: Bytes
-      - name: c_string
-        dataType:
-          type: String
-      - name: c_float64
-        dataType:
-          type: Float
-      - name: c_numeric_1
-        dataType:
-          type: Numeric
-      - name: c_numeric_2
-        dataType:
-          type: Numeric
-      - name: c_date
-        dataType:
-          type: Date
-      - name: c_interval
-        dataType:
-          type: Interval
-      - name: c_time
-        dataType:
-          type: Time
-      - name: c_timestamp
-        dataType:
-          type: Timestamp
-      - name: c_datetime
-        dataType:
-          type: Date
-      - name: c_geography
-        dataType:
-          type: Geography
-      - name: c_json
-        dataType:
-          type: Json
-      - name: c_array_int64
-        dataType:
-          type: Array
-          dataType:
-            type: Integer
-      - name: c_struct
-        dataType:
-          type: Record
-          fields:
-          - name: name
-            dataType:
-              type: String
-          - name: age
-            dataType:
-              type: Integer
-          - name: department
-            dataType:
-              type: String
-      - name: p_date
-        dataType:
-          type: Date
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -174,75 +106,7 @@ sqlModels:
     modifiedAt: '2023-06-08 06:26:00'
   .prophecy/metadata/sqlmodels/test_bigquery_use_all_mainp:
     name: test_bigquery_use_all_mainp
-    schema:
-      providerType: BigQuery
-      fields:
-      - name: c_int64
-        dataType:
-          type: Integer
-      - name: c_bignumeric
-        dataType:
-          type: BigNumeric
-      - name: c_bool
-        dataType:
-          type: Boolean
-      - name: c_bytes
-        dataType:
-          type: Bytes
-      - name: c_string
-        dataType:
-          type: String
-      - name: c_float64
-        dataType:
-          type: Float
-      - name: c_numeric_1
-        dataType:
-          type: Numeric
-      - name: c_numeric_2
-        dataType:
-          type: Numeric
-      - name: c_date
-        dataType:
-          type: Date
-      - name: c_interval
-        dataType:
-          type: Interval
-      - name: c_time
-        dataType:
-          type: Time
-      - name: c_timestamp
-        dataType:
-          type: Timestamp
-      - name: c_datetime
-        dataType:
-          type: Date
-      - name: c_geography
-        dataType:
-          type: Geography
-      - name: c_json
-        dataType:
-          type: Json
-      - name: c_array_int64
-        dataType:
-          type: Array
-          dataType:
-            type: Integer
-      - name: c_struct
-        dataType:
-          type: Record
-          fields:
-          - name: name
-            dataType:
-              type: String
-          - name: age
-            dataType:
-              type: Integer
-          - name: department
-            dataType:
-              type: String
-      - name: p_date
-        dataType:
-          type: Date
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
