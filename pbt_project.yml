@@ -8,7 +8,79 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/AirflowMWAA_BQ:
+    name: AirflowMWAA_BQ
+    description: ''
+    fabricUID: 5275
+    scheduler:
+      MWAA: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 * * 1
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2023-06-08 06:59:28'
+    modifiedAt: '2023-06-08 07:22:57'
+    author: abhisheks+e2etests@prophecy.io
+  jobs/AirflowGCP_BQ:
+    name: AirflowGCP_BQ
+    description: ''
+    fabricUID: 4315
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2023-06-08 07:08:14'
+    modifiedAt: '2023-06-08 07:23:06'
+    author: abhisheks+e2etests@prophecy.io
+  jobs/AirflowPM_BQ:
+    name: AirflowPM_BQ
+    description: ''
+    fabricUID: 5117
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 * * 6
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2023-06-08 07:21:39'
+    modifiedAt: '2023-06-08 07:22:50'
+    author: abhisheks+e2etests@prophecy.io
 functions:
   author: null
   createdAt: '2023-06-08 06:17:31'
@@ -181,6 +253,87 @@ sqlModels:
       datasets: []
     createdAt: '2023-06-08 06:43:03'
     modifiedAt: '2023-06-08 06:43:03'
+  .prophecy/metadata/sqlmodels/test_excluded_job_model:
+    name: test_excluded_job_model
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: c_int64
+        dataType:
+          type: Integer
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: p_date
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/test_excluded_job_model.sql
+    - .prophecy/ide/models/test_excluded_job_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-08 07:00:34'
+    modifiedAt: '2023-06-08 07:00:34'
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources:
