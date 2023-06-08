@@ -18,10 +18,275 @@ functions:
   udafs: {}
   expressions: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/test_bigquery_main_project_1:
+    name: test_bigquery_main_project_1
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: c_int64
+        dataType:
+          type: Integer
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: p_date
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/test_bigquery_main_project_1.sql
+    - .prophecy/ide/models/test_bigquery_main_project_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-08 06:26:00'
+    modifiedAt: '2023-06-08 06:26:00'
+  .prophecy/metadata/sqlmodels/test_bigquery_use_all_mainp:
+    name: test_bigquery_use_all_mainp
+    schema:
+      providerType: BigQuery
+      fields:
+      - name: c_int64
+        dataType:
+          type: Integer
+      - name: c_bignumeric
+        dataType:
+          type: BigNumeric
+      - name: c_bool
+        dataType:
+          type: Boolean
+      - name: c_bytes
+        dataType:
+          type: Bytes
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_float64
+        dataType:
+          type: Float
+      - name: c_numeric_1
+        dataType:
+          type: Numeric
+      - name: c_numeric_2
+        dataType:
+          type: Numeric
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_interval
+        dataType:
+          type: Interval
+      - name: c_time
+        dataType:
+          type: Time
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_datetime
+        dataType:
+          type: Date
+      - name: c_geography
+        dataType:
+          type: Geography
+      - name: c_json
+        dataType:
+          type: Json
+      - name: c_array_int64
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_struct
+        dataType:
+          type: Record
+          fields:
+          - name: name
+            dataType:
+              type: String
+          - name: age
+            dataType:
+              type: Integer
+          - name: department
+            dataType:
+              type: String
+      - name: p_date
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/test_bigquery_use_all_mainp.sql
+    - .prophecy/ide/models/test_bigquery_use_all_mainp.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-08 06:43:03'
+    modifiedAt: '2023-06-08 06:43:03'
 sqlMacros: {}
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/prophecy-qa_qa_test_another_dataset:
+    name: prophecy-qa.qa_test_another_dataset
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-06-08 06:41:18'
+    modifiedAt: '2023-06-08 06:41:18'
+    tables:
+    - name: hundred_rows_table
+      schema:
+        providerType: bigquery
+        fields:
+        - name: a
+          dataType:
+            type: Integer
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-06-08 06:41:18'
+      modifiedAt: '2023-06-08 06:41:18'
+  .prophecy/metadata/sqlsources/prophecy-qa_qa_test_dataset:
+    name: prophecy-qa.qa_test_dataset
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-06-08 06:41:06'
+    modifiedAt: '2023-06-08 06:41:06'
+    tables:
+    - name: all_type_table
+      schema:
+        providerType: bigquery
+        fields:
+        - name: c_int64
+          dataType:
+            type: Integer
+        - name: c_bignumeric
+          dataType:
+            type: BigNumeric
+        - name: c_bool
+          dataType:
+            type: Boolean
+        - name: c_bytes
+          dataType:
+            type: Bytes
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_float64
+          dataType:
+            type: Float
+        - name: c_numeric_1
+          dataType:
+            type: Numeric
+        - name: c_numeric_2
+          dataType:
+            type: Numeric
+        - name: c_date
+          dataType:
+            type: Date
+        - name: c_interval
+          dataType:
+            type: Interval
+        - name: c_time
+          dataType:
+            type: Time
+        - name: c_timestamp
+          dataType:
+            type: Timestamp
+        - name: c_datetime
+          dataType:
+            type: Date
+        - name: c_geography
+          dataType:
+            type: Geography
+        - name: c_json
+          dataType:
+            type: Json
+        - name: c_array_int64
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: c_struct
+          dataType:
+            type: Record
+            fields:
+            - name: name
+              dataType:
+                type: String
+            - name: age
+              dataType:
+                type: Integer
+            - name: department
+              dataType:
+                type: String
+        - name: p_date
+          dataType:
+            type: Date
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-06-08 06:41:06'
+      modifiedAt: '2023-06-08 06:41:06'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

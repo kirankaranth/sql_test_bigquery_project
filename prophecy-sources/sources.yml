@@ -1,0 +1,88 @@
+---
+version: 2
+sources:
+- name: "prophecy-qa.qa_test_dataset"
+  database: "prophecy-qa"
+  schema: "qa_test_dataset"
+  config:
+    enabled: true
+  tables:
+  - name: "all_type_table"
+    columns:
+    - name: "c_int64"
+      dataType:
+        type: "Integer"
+    - name: "c_bignumeric"
+      dataType:
+        type: "BigNumeric"
+    - name: "c_bool"
+      dataType:
+        type: "Boolean"
+    - name: "c_bytes"
+      dataType:
+        type: "Bytes"
+    - name: "c_string"
+      dataType:
+        type: "String"
+    - name: "c_float64"
+      dataType:
+        type: "Float"
+    - name: "c_numeric_1"
+      dataType:
+        type: "Numeric"
+    - name: "c_numeric_2"
+      dataType:
+        type: "Numeric"
+    - name: "c_date"
+      dataType:
+        type: "Date"
+    - name: "c_interval"
+      dataType:
+        type: "Interval"
+    - name: "c_time"
+      dataType:
+        type: "Time"
+    - name: "c_timestamp"
+      dataType:
+        type: "Timestamp"
+    - name: "c_datetime"
+      dataType:
+        type: "Date"
+    - name: "c_geography"
+      dataType:
+        type: "Geography"
+    - name: "c_json"
+      dataType:
+        type: "Json"
+    - name: "c_array_int64"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Integer"
+    - name: "c_struct"
+      dataType:
+        type: "Record"
+        fields:
+        - name: "name"
+          dataType:
+            type: "String"
+        - name: "age"
+          dataType:
+            type: "Integer"
+        - name: "department"
+          dataType:
+            type: "String"
+    - name: "p_date"
+      dataType:
+        type: "Date"
+- name: "prophecy-qa.qa_test_another_dataset"
+  database: "prophecy-qa"
+  schema: "qa_test_another_dataset"
+  config:
+    enabled: true
+  tables:
+  - name: "hundred_rows_table"
+    columns:
+    - name: "a"
+      dataType:
+        type: "Integer"

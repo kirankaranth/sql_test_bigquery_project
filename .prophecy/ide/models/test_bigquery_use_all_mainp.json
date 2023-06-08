@@ -1,0 +1,1038 @@
+{
+  "id" : "test_bigquery_use_all_mainp",
+  "metainfo" : {
+    "label" : "test_bigquery_use_all_mainp",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    }
+  },
+  "processes" : {
+    "test_bigquery_use_all_mainp##h3CAJNke" : {
+      "id" : "test_bigquery_use_all_mainp##h3CAJNke",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_bigquery_use_all_mainp",
+        "x" : 120,
+        "y" : 120,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Join_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OyfEVhwN",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "BigNumeric"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_bytes",
+              "dataType" : {
+                "type" : "Bytes"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_numeric_1",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_numeric_2",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_interval",
+              "dataType" : {
+                "type" : "Interval"
+              }
+            }, {
+              "name" : "c_time",
+              "dataType" : {
+                "type" : "Time"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_datetime",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_geography",
+              "dataType" : {
+                "type" : "Geography"
+              }
+            }, {
+              "name" : "c_json",
+              "dataType" : {
+                "type" : "Json"
+              }
+            }, {
+              "name" : "c_array_int64",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Record",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "department",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              }
+            }, {
+              "name" : "p_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "Join_1"
+        } ],
+        "outputs" : [ {
+          "id" : "zRu8YCJL",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "BigNumeric"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_bytes",
+              "dataType" : {
+                "type" : "Bytes"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_numeric_1",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_numeric_2",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_interval",
+              "dataType" : {
+                "type" : "Interval"
+              }
+            }, {
+              "name" : "c_time",
+              "dataType" : {
+                "type" : "Time"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_datetime",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_geography",
+              "dataType" : {
+                "type" : "Geography"
+              }
+            }, {
+              "name" : "c_json",
+              "dataType" : {
+                "type" : "Json"
+              }
+            }, {
+              "name" : "c_array_int64",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Record",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "department",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              }
+            }, {
+              "name" : "p_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "JST_8vy_DUrrFjzC4gkKj" : {
+      "id" : "JST_8vy_DUrrFjzC4gkKj",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "test_bigquery_main_project_1",
+        "slug" : "test_bigquery_main_project_1",
+        "x" : -600,
+        "y" : -100,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "test_bigquery_main_project_1",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "8BVlWfv4bN7Dqz209H3dZ",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "BigNumeric"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_bytes",
+              "dataType" : {
+                "type" : "Bytes"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_numeric_1",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_numeric_2",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_interval",
+              "dataType" : {
+                "type" : "Interval"
+              }
+            }, {
+              "name" : "c_time",
+              "dataType" : {
+                "type" : "Time"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_datetime",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_geography",
+              "dataType" : {
+                "type" : "Geography"
+              }
+            }, {
+              "name" : "c_json",
+              "dataType" : {
+                "type" : "Json"
+              }
+            }, {
+              "name" : "c_array_int64",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Record",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "department",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              }
+            }, {
+              "name" : "p_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "2yRamHHtEErvPNFELAkT-" : {
+      "id" : "2yRamHHtEErvPNFELAkT-",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "all_type_table",
+        "slug" : "all_type_table",
+        "x" : -600,
+        "y" : 160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "all_type_table",
+          "sourceType" : "Source",
+          "sourceName" : "prophecy-qa.qa_test_dataset",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "_-Msa4PwS7CnYswP8OAFl",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "BigNumeric"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_bytes",
+              "dataType" : {
+                "type" : "Bytes"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_numeric_1",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_numeric_2",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_interval",
+              "dataType" : {
+                "type" : "Interval"
+              }
+            }, {
+              "name" : "c_time",
+              "dataType" : {
+                "type" : "Time"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_datetime",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_geography",
+              "dataType" : {
+                "type" : "Geography"
+              }
+            }, {
+              "name" : "c_json",
+              "dataType" : {
+                "type" : "Json"
+              }
+            }, {
+              "name" : "c_array_int64",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Record",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "department",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              }
+            }, {
+              "name" : "p_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "HF6DSemTaq7EsFBCniz2Y$$jEcZES9Y-AyU7MVd7LAco" : {
+      "id" : "HF6DSemTaq7EsFBCniz2Y$$jEcZES9Y-AyU7MVd7LAco",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : -360,
+        "y" : 100,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : "in0.c_string!=in1.c_string"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "in0.c_int64"
+          },
+          "alias" : "c_int64"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_bignumeric"
+          },
+          "alias" : "c_bignumeric"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_bool"
+          },
+          "alias" : "c_bool"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_bytes"
+          },
+          "alias" : "c_bytes"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_string"
+          },
+          "alias" : "c_string"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_float64"
+          },
+          "alias" : "c_float64"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_numeric_1"
+          },
+          "alias" : "c_numeric_1"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_numeric_2"
+          },
+          "alias" : "c_numeric_2"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_date"
+          },
+          "alias" : "c_date"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_interval"
+          },
+          "alias" : "c_interval"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_time"
+          },
+          "alias" : "c_time"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_timestamp"
+          },
+          "alias" : "c_timestamp"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_datetime"
+          },
+          "alias" : "c_datetime"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_geography"
+          },
+          "alias" : "c_geography"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_json"
+          },
+          "alias" : "c_json"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_array_int64"
+          },
+          "alias" : "c_array_int64"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_struct"
+          },
+          "alias" : "c_struct"
+        }, {
+          "expression" : {
+            "expression" : "in0.p_date"
+          },
+          "alias" : "p_date"
+        } ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_string", "arGYJvp89s3e350a1I-oh$$HU1H_Jl981hRDMp--Xdtj##c_string", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_int64", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_bignumeric", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_bool", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_bytes", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_string", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_float64", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_numeric_1", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_numeric_2", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_date", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_interval", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_time", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_timestamp", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_datetime", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_geography", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_json", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_array_int64", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##c_struct", "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL##p_date" ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "BigNumeric"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_bytes",
+              "dataType" : {
+                "type" : "Bytes"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_numeric_1",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_numeric_2",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_interval",
+              "dataType" : {
+                "type" : "Interval"
+              }
+            }, {
+              "name" : "c_time",
+              "dataType" : {
+                "type" : "Time"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_datetime",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_geography",
+              "dataType" : {
+                "type" : "Geography"
+              }
+            }, {
+              "name" : "c_json",
+              "dataType" : {
+                "type" : "Json"
+              }
+            }, {
+              "name" : "c_array_int64",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Record",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "department",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              }
+            }, {
+              "name" : "p_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        }, {
+          "id" : "arGYJvp89s3e350a1I-oh$$HU1H_Jl981hRDMp--Xdtj",
+          "schema" : {
+            "providerType" : "bigquery",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "BigNumeric"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_bytes",
+              "dataType" : {
+                "type" : "Bytes"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_numeric_1",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_numeric_2",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_interval",
+              "dataType" : {
+                "type" : "Interval"
+              }
+            }, {
+              "name" : "c_time",
+              "dataType" : {
+                "type" : "Time"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_datetime",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_geography",
+              "dataType" : {
+                "type" : "Geography"
+              }
+            }, {
+              "name" : "c_json",
+              "dataType" : {
+                "type" : "Json"
+              }
+            }, {
+              "name" : "c_array_int64",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Record",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "department",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              }
+            }, {
+              "name" : "p_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "WEml_KEeaQUNlLCd1uh1Z$$RjUzTJBA6XjHfZ3kAnHK1",
+          "schema" : {
+            "providerType" : "BigQuery",
+            "fields" : [ {
+              "name" : "c_int64",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_bignumeric",
+              "dataType" : {
+                "type" : "BigNumeric"
+              }
+            }, {
+              "name" : "c_bool",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_bytes",
+              "dataType" : {
+                "type" : "Bytes"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_float64",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_numeric_1",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_numeric_2",
+              "dataType" : {
+                "type" : "Numeric"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_interval",
+              "dataType" : {
+                "type" : "Interval"
+              }
+            }, {
+              "name" : "c_time",
+              "dataType" : {
+                "type" : "Time"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_datetime",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_geography",
+              "dataType" : {
+                "type" : "Geography"
+              }
+            }, {
+              "name" : "c_json",
+              "dataType" : {
+                "type" : "Json"
+              }
+            }, {
+              "name" : "c_array_int64",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Record",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "department",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              }
+            }, {
+              "name" : "p_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "dm0JNiCDguHowImw4u1oO$$azOxymikeuE1undhn4BE2",
+    "source" : "JST_8vy_DUrrFjzC4gkKj",
+    "sourcePort" : "8BVlWfv4bN7Dqz209H3dZ",
+    "target" : "HF6DSemTaq7EsFBCniz2Y$$jEcZES9Y-AyU7MVd7LAco",
+    "targetPort" : "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL"
+  }, {
+    "id" : "ARfbndOC0TTBYMN46oBkM",
+    "source" : "2yRamHHtEErvPNFELAkT-",
+    "sourcePort" : "_-Msa4PwS7CnYswP8OAFl",
+    "target" : "HF6DSemTaq7EsFBCniz2Y$$jEcZES9Y-AyU7MVd7LAco",
+    "targetPort" : "arGYJvp89s3e350a1I-oh$$HU1H_Jl981hRDMp--Xdtj"
+  }, {
+    "id" : "pM9sf3HvblhsSQHIKScTO",
+    "source" : "HF6DSemTaq7EsFBCniz2Y$$jEcZES9Y-AyU7MVd7LAco",
+    "sourcePort" : "WEml_KEeaQUNlLCd1uh1Z$$RjUzTJBA6XjHfZ3kAnHK1",
+    "target" : "test_bigquery_use_all_mainp##h3CAJNke",
+    "targetPort" : "OyfEVhwN"
+  } ],
+  "component" : "Model"
+}

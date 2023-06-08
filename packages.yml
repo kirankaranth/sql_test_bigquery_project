@@ -1,0 +1,4 @@
+---
+packages:
+- revision: "main"
+  git: "https://github.com/abhisheks-prophecy/sql_test_all_parent_project.git"
