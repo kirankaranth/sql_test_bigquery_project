@@ -33,7 +33,7 @@
         "inputs" : [ {
           "id" : "OyfEVhwN",
           "schema" : {
-            "providerType" : "BigQuery",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "c_int64",
               "dataType" : {
@@ -42,7 +42,7 @@
             }, {
               "name" : "c_bignumeric",
               "dataType" : {
-                "type" : "BigNumeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_bool",
@@ -52,7 +52,7 @@
             }, {
               "name" : "c_bytes",
               "dataType" : {
-                "type" : "Bytes"
+                "type" : "String"
               }
             }, {
               "name" : "c_string",
@@ -67,12 +67,12 @@
             }, {
               "name" : "c_numeric_1",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_numeric_2",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_date",
@@ -82,12 +82,12 @@
             }, {
               "name" : "c_interval",
               "dataType" : {
-                "type" : "Interval"
+                "type" : "String"
               }
             }, {
               "name" : "c_time",
               "dataType" : {
-                "type" : "Time"
+                "type" : "String"
               }
             }, {
               "name" : "c_timestamp",
@@ -102,12 +102,12 @@
             }, {
               "name" : "c_geography",
               "dataType" : {
-                "type" : "Geography"
+                "type" : "String"
               }
             }, {
               "name" : "c_json",
               "dataType" : {
-                "type" : "Json"
+                "type" : "String"
               }
             }, {
               "name" : "c_array_int64",
@@ -120,23 +120,7 @@
             }, {
               "name" : "c_struct",
               "dataType" : {
-                "type" : "Record",
-                "fields" : [ {
-                  "name" : "name",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "age",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "department",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                } ]
+                "type" : "String"
               }
             }, {
               "name" : "p_date",
@@ -150,7 +134,7 @@
         "outputs" : [ {
           "id" : "zRu8YCJL",
           "schema" : {
-            "providerType" : "BigQuery",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "c_int64",
               "dataType" : {
@@ -159,7 +143,7 @@
             }, {
               "name" : "c_bignumeric",
               "dataType" : {
-                "type" : "BigNumeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_bool",
@@ -169,7 +153,7 @@
             }, {
               "name" : "c_bytes",
               "dataType" : {
-                "type" : "Bytes"
+                "type" : "String"
               }
             }, {
               "name" : "c_string",
@@ -184,12 +168,12 @@
             }, {
               "name" : "c_numeric_1",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_numeric_2",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_date",
@@ -199,12 +183,12 @@
             }, {
               "name" : "c_interval",
               "dataType" : {
-                "type" : "Interval"
+                "type" : "String"
               }
             }, {
               "name" : "c_time",
               "dataType" : {
-                "type" : "Time"
+                "type" : "String"
               }
             }, {
               "name" : "c_timestamp",
@@ -219,12 +203,12 @@
             }, {
               "name" : "c_geography",
               "dataType" : {
-                "type" : "Geography"
+                "type" : "String"
               }
             }, {
               "name" : "c_json",
               "dataType" : {
-                "type" : "Json"
+                "type" : "String"
               }
             }, {
               "name" : "c_array_int64",
@@ -237,23 +221,7 @@
             }, {
               "name" : "c_struct",
               "dataType" : {
-                "type" : "Record",
-                "fields" : [ {
-                  "name" : "name",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "age",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "department",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                } ]
+                "type" : "String"
               }
             }, {
               "name" : "p_date",
@@ -289,7 +257,7 @@
         "outputs" : [ {
           "id" : "8BVlWfv4bN7Dqz209H3dZ",
           "schema" : {
-            "providerType" : "BigQuery",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "c_int64",
               "dataType" : {
@@ -298,7 +266,7 @@
             }, {
               "name" : "c_bignumeric",
               "dataType" : {
-                "type" : "BigNumeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_bool",
@@ -308,7 +276,7 @@
             }, {
               "name" : "c_bytes",
               "dataType" : {
-                "type" : "Bytes"
+                "type" : "String"
               }
             }, {
               "name" : "c_string",
@@ -323,12 +291,12 @@
             }, {
               "name" : "c_numeric_1",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_numeric_2",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_date",
@@ -338,12 +306,12 @@
             }, {
               "name" : "c_interval",
               "dataType" : {
-                "type" : "Interval"
+                "type" : "String"
               }
             }, {
               "name" : "c_time",
               "dataType" : {
-                "type" : "Time"
+                "type" : "String"
               }
             }, {
               "name" : "c_timestamp",
@@ -358,12 +326,12 @@
             }, {
               "name" : "c_geography",
               "dataType" : {
-                "type" : "Geography"
+                "type" : "String"
               }
             }, {
               "name" : "c_json",
               "dataType" : {
-                "type" : "Json"
+                "type" : "String"
               }
             }, {
               "name" : "c_array_int64",
@@ -376,23 +344,7 @@
             }, {
               "name" : "c_struct",
               "dataType" : {
-                "type" : "Record",
-                "fields" : [ {
-                  "name" : "name",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "age",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "department",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                } ]
+                "type" : "String"
               }
             }, {
               "name" : "p_date",
@@ -429,7 +381,7 @@
         "outputs" : [ {
           "id" : "_-Msa4PwS7CnYswP8OAFl",
           "schema" : {
-            "providerType" : "bigquery",
+            "providerType" : "databricks",
             "fields" : [ {
               "name" : "c_int64",
               "dataType" : {
@@ -438,7 +390,7 @@
             }, {
               "name" : "c_bignumeric",
               "dataType" : {
-                "type" : "BigNumeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_bool",
@@ -448,7 +400,7 @@
             }, {
               "name" : "c_bytes",
               "dataType" : {
-                "type" : "Bytes"
+                "type" : "String"
               }
             }, {
               "name" : "c_string",
@@ -463,12 +415,12 @@
             }, {
               "name" : "c_numeric_1",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_numeric_2",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_date",
@@ -478,12 +430,12 @@
             }, {
               "name" : "c_interval",
               "dataType" : {
-                "type" : "Interval"
+                "type" : "String"
               }
             }, {
               "name" : "c_time",
               "dataType" : {
-                "type" : "Time"
+                "type" : "String"
               }
             }, {
               "name" : "c_timestamp",
@@ -498,12 +450,12 @@
             }, {
               "name" : "c_geography",
               "dataType" : {
-                "type" : "Geography"
+                "type" : "String"
               }
             }, {
               "name" : "c_json",
               "dataType" : {
-                "type" : "Json"
+                "type" : "String"
               }
             }, {
               "name" : "c_array_int64",
@@ -516,23 +468,7 @@
             }, {
               "name" : "c_struct",
               "dataType" : {
-                "type" : "Record",
-                "fields" : [ {
-                  "name" : "name",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "age",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "department",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                } ]
+                "type" : "String"
               }
             }, {
               "name" : "p_date",
@@ -664,7 +600,7 @@
         "inputs" : [ {
           "id" : "pgTvWoONQiHx-XoisP-9V$$xogvP5JAzqTZ2-Y7ycygL",
           "schema" : {
-            "providerType" : "BigQuery",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "c_int64",
               "dataType" : {
@@ -673,7 +609,7 @@
             }, {
               "name" : "c_bignumeric",
               "dataType" : {
-                "type" : "BigNumeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_bool",
@@ -683,7 +619,7 @@
             }, {
               "name" : "c_bytes",
               "dataType" : {
-                "type" : "Bytes"
+                "type" : "String"
               }
             }, {
               "name" : "c_string",
@@ -698,12 +634,12 @@
             }, {
               "name" : "c_numeric_1",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_numeric_2",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_date",
@@ -713,12 +649,12 @@
             }, {
               "name" : "c_interval",
               "dataType" : {
-                "type" : "Interval"
+                "type" : "String"
               }
             }, {
               "name" : "c_time",
               "dataType" : {
-                "type" : "Time"
+                "type" : "String"
               }
             }, {
               "name" : "c_timestamp",
@@ -733,12 +669,12 @@
             }, {
               "name" : "c_geography",
               "dataType" : {
-                "type" : "Geography"
+                "type" : "String"
               }
             }, {
               "name" : "c_json",
               "dataType" : {
-                "type" : "Json"
+                "type" : "String"
               }
             }, {
               "name" : "c_array_int64",
@@ -751,23 +687,7 @@
             }, {
               "name" : "c_struct",
               "dataType" : {
-                "type" : "Record",
-                "fields" : [ {
-                  "name" : "name",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "age",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "department",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                } ]
+                "type" : "String"
               }
             }, {
               "name" : "p_date",
@@ -780,7 +700,7 @@
         }, {
           "id" : "arGYJvp89s3e350a1I-oh$$HU1H_Jl981hRDMp--Xdtj",
           "schema" : {
-            "providerType" : "bigquery",
+            "providerType" : "databricks",
             "fields" : [ {
               "name" : "c_int64",
               "dataType" : {
@@ -789,7 +709,7 @@
             }, {
               "name" : "c_bignumeric",
               "dataType" : {
-                "type" : "BigNumeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_bool",
@@ -799,7 +719,7 @@
             }, {
               "name" : "c_bytes",
               "dataType" : {
-                "type" : "Bytes"
+                "type" : "String"
               }
             }, {
               "name" : "c_string",
@@ -814,12 +734,12 @@
             }, {
               "name" : "c_numeric_1",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_numeric_2",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_date",
@@ -829,12 +749,12 @@
             }, {
               "name" : "c_interval",
               "dataType" : {
-                "type" : "Interval"
+                "type" : "String"
               }
             }, {
               "name" : "c_time",
               "dataType" : {
-                "type" : "Time"
+                "type" : "String"
               }
             }, {
               "name" : "c_timestamp",
@@ -849,12 +769,12 @@
             }, {
               "name" : "c_geography",
               "dataType" : {
-                "type" : "Geography"
+                "type" : "String"
               }
             }, {
               "name" : "c_json",
               "dataType" : {
-                "type" : "Json"
+                "type" : "String"
               }
             }, {
               "name" : "c_array_int64",
@@ -867,23 +787,7 @@
             }, {
               "name" : "c_struct",
               "dataType" : {
-                "type" : "Record",
-                "fields" : [ {
-                  "name" : "name",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "age",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "department",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                } ]
+                "type" : "String"
               }
             }, {
               "name" : "p_date",
@@ -897,7 +801,7 @@
         "outputs" : [ {
           "id" : "WEml_KEeaQUNlLCd1uh1Z$$RjUzTJBA6XjHfZ3kAnHK1",
           "schema" : {
-            "providerType" : "BigQuery",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "c_int64",
               "dataType" : {
@@ -906,7 +810,7 @@
             }, {
               "name" : "c_bignumeric",
               "dataType" : {
-                "type" : "BigNumeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_bool",
@@ -916,7 +820,7 @@
             }, {
               "name" : "c_bytes",
               "dataType" : {
-                "type" : "Bytes"
+                "type" : "String"
               }
             }, {
               "name" : "c_string",
@@ -931,12 +835,12 @@
             }, {
               "name" : "c_numeric_1",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_numeric_2",
               "dataType" : {
-                "type" : "Numeric"
+                "type" : "String"
               }
             }, {
               "name" : "c_date",
@@ -946,12 +850,12 @@
             }, {
               "name" : "c_interval",
               "dataType" : {
-                "type" : "Interval"
+                "type" : "String"
               }
             }, {
               "name" : "c_time",
               "dataType" : {
-                "type" : "Time"
+                "type" : "String"
               }
             }, {
               "name" : "c_timestamp",
@@ -966,12 +870,12 @@
             }, {
               "name" : "c_geography",
               "dataType" : {
-                "type" : "Geography"
+                "type" : "String"
               }
             }, {
               "name" : "c_json",
               "dataType" : {
-                "type" : "Json"
+                "type" : "String"
               }
             }, {
               "name" : "c_array_int64",
@@ -984,23 +888,7 @@
             }, {
               "name" : "c_struct",
               "dataType" : {
-                "type" : "Record",
-                "fields" : [ {
-                  "name" : "name",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "age",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "department",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                } ]
+                "type" : "String"
               }
             }, {
               "name" : "p_date",

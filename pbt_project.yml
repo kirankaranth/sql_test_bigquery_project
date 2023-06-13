@@ -94,20 +94,20 @@ sqlModels:
   .prophecy/metadata/sqlmodels/test_bigquery_main_project_1:
     name: test_bigquery_main_project_1
     schema:
-      providerType: BigQuery
+      providerType: Databricks
       fields:
       - name: c_int64
         dataType:
           type: Integer
       - name: c_bignumeric
         dataType:
-          type: BigNumeric
+          type: String
       - name: c_bool
         dataType:
           type: Boolean
       - name: c_bytes
         dataType:
-          type: Bytes
+          type: String
       - name: c_string
         dataType:
           type: String
@@ -116,19 +116,19 @@ sqlModels:
           type: Float
       - name: c_numeric_1
         dataType:
-          type: Numeric
+          type: String
       - name: c_numeric_2
         dataType:
-          type: Numeric
+          type: String
       - name: c_date
         dataType:
           type: Date
       - name: c_interval
         dataType:
-          type: Interval
+          type: String
       - name: c_time
         dataType:
-          type: Time
+          type: String
       - name: c_timestamp
         dataType:
           type: Timestamp
@@ -137,10 +137,10 @@ sqlModels:
           type: Date
       - name: c_geography
         dataType:
-          type: Geography
+          type: String
       - name: c_json
         dataType:
-          type: Json
+          type: String
       - name: c_array_int64
         dataType:
           type: Array
@@ -148,17 +148,7 @@ sqlModels:
             type: Integer
       - name: c_struct
         dataType:
-          type: Record
-          fields:
-          - name: name
-            dataType:
-              type: String
-          - name: age
-            dataType:
-              type: Integer
-          - name: department
-            dataType:
-              type: String
+          type: String
       - name: p_date
         dataType:
           type: Date
@@ -175,20 +165,20 @@ sqlModels:
   .prophecy/metadata/sqlmodels/test_bigquery_use_all_mainp:
     name: test_bigquery_use_all_mainp
     schema:
-      providerType: BigQuery
+      providerType: Databricks
       fields:
       - name: c_int64
         dataType:
           type: Integer
       - name: c_bignumeric
         dataType:
-          type: BigNumeric
+          type: String
       - name: c_bool
         dataType:
           type: Boolean
       - name: c_bytes
         dataType:
-          type: Bytes
+          type: String
       - name: c_string
         dataType:
           type: String
@@ -197,19 +187,19 @@ sqlModels:
           type: Float
       - name: c_numeric_1
         dataType:
-          type: Numeric
+          type: String
       - name: c_numeric_2
         dataType:
-          type: Numeric
+          type: String
       - name: c_date
         dataType:
           type: Date
       - name: c_interval
         dataType:
-          type: Interval
+          type: String
       - name: c_time
         dataType:
-          type: Time
+          type: String
       - name: c_timestamp
         dataType:
           type: Timestamp
@@ -218,10 +208,10 @@ sqlModels:
           type: Date
       - name: c_geography
         dataType:
-          type: Geography
+          type: String
       - name: c_json
         dataType:
-          type: Json
+          type: String
       - name: c_array_int64
         dataType:
           type: Array
@@ -229,17 +219,7 @@ sqlModels:
             type: Integer
       - name: c_struct
         dataType:
-          type: Record
-          fields:
-          - name: name
-            dataType:
-              type: String
-          - name: age
-            dataType:
-              type: Integer
-          - name: department
-            dataType:
-              type: String
+          type: String
       - name: p_date
         dataType:
           type: Date
@@ -256,20 +236,20 @@ sqlModels:
   .prophecy/metadata/sqlmodels/test_excluded_job_model:
     name: test_excluded_job_model
     schema:
-      providerType: BigQuery
+      providerType: Databricks
       fields:
       - name: c_int64
         dataType:
           type: Integer
       - name: c_bignumeric
         dataType:
-          type: BigNumeric
+          type: String
       - name: c_bool
         dataType:
           type: Boolean
       - name: c_bytes
         dataType:
-          type: Bytes
+          type: String
       - name: c_string
         dataType:
           type: String
@@ -278,19 +258,19 @@ sqlModels:
           type: Float
       - name: c_numeric_1
         dataType:
-          type: Numeric
+          type: String
       - name: c_numeric_2
         dataType:
-          type: Numeric
+          type: String
       - name: c_date
         dataType:
           type: Date
       - name: c_interval
         dataType:
-          type: Interval
+          type: String
       - name: c_time
         dataType:
-          type: Time
+          type: String
       - name: c_timestamp
         dataType:
           type: Timestamp
@@ -299,10 +279,10 @@ sqlModels:
           type: Date
       - name: c_geography
         dataType:
-          type: Geography
+          type: String
       - name: c_json
         dataType:
-          type: Json
+          type: String
       - name: c_array_int64
         dataType:
           type: Array
@@ -310,17 +290,7 @@ sqlModels:
             type: Integer
       - name: c_struct
         dataType:
-          type: Record
-          fields:
-          - name: name
-            dataType:
-              type: String
-          - name: age
-            dataType:
-              type: Integer
-          - name: department
-            dataType:
-              type: String
+          type: String
       - name: p_date
         dataType:
           type: Date
@@ -349,7 +319,10 @@ sqlSources:
     - name: hundred_rows_table
       schema:
         providerType: databricks
-        fields: []
+        fields:
+        - name: a
+          dataType:
+            type: Integer
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-06-08 06:41:18'
@@ -366,7 +339,63 @@ sqlSources:
     - name: all_type_table
       schema:
         providerType: databricks
-        fields: []
+        fields:
+        - name: c_int64
+          dataType:
+            type: Integer
+        - name: c_bignumeric
+          dataType:
+            type: String
+        - name: c_bool
+          dataType:
+            type: Boolean
+        - name: c_bytes
+          dataType:
+            type: String
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_float64
+          dataType:
+            type: Float
+        - name: c_numeric_1
+          dataType:
+            type: String
+        - name: c_numeric_2
+          dataType:
+            type: String
+        - name: c_date
+          dataType:
+            type: Date
+        - name: c_interval
+          dataType:
+            type: String
+        - name: c_time
+          dataType:
+            type: String
+        - name: c_timestamp
+          dataType:
+            type: Timestamp
+        - name: c_datetime
+          dataType:
+            type: Date
+        - name: c_geography
+          dataType:
+            type: String
+        - name: c_json
+          dataType:
+            type: String
+        - name: c_array_int64
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: c_struct
+          dataType:
+            type: String
+        - name: p_date
+          dataType:
+            type: Date
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-06-08 06:41:06'
